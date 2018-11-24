@@ -1,0 +1,34 @@
+page-welcome {
+  .swiper-wrapper {
+    padding-bottom: 16px
+  }
+
+  .swiper-pagination-bullet-active {
+    background: color($colors, danger);
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 5px;
+  }
+
+  button[small] {
+    padding: 16px 2.6em
+  }
+
+  .btn-tinder-login {
+    padding: 16px 3em;
+    font-weight: 700;
+    background: linear-gradient(260deg,#337eb9,#384499);
+  }
+  .dsfm_override_ion-content{
+    background: map-get($dsfm_override_base, ion_content);
+  }
+  .dsfm_override_ion-button{
+    background: map-get($dsfm_override_base_button, ion_button_orange_white);
+    color: map-get($dsfm_override_base, text_white);
+    border: none;
+  }
+  .dsfm_override_footer_text,.dsfm_override_header_text{
+    color: #FFF;
+  }
+}

@@ -1,0 +1,26 @@
+<ion-content class="dsfm_override_ion-content" padding>
+  <div layout vertical center>
+    <ion-slides #slides pager flex>
+      <ion-slide *ngFor="let slide of introSlides">
+        <h3 class="font-thin dsfm_override_header_text" [innerHTML]="slide.title"></h3>
+        <img [src]="slide.image">
+      </ion-slide>
+    </ion-slides>
+
+    <div class="text-center">
+      <div>
+        <button ion-button round class="btn-tinder-login m-b-sm" (click)="goToSwipe()">Entrar como Facebook</button>
+      </div>
+      <div>
+        <button ion-button round small color="muted" class="dsfm_override_ion-button" outline (click)="goToSwipe()">Login com o Numero de Telefone</button>
+      </div>
+
+      <div class="wrapper text-muted dsfm_override_footer_text">
+        <p>Projeto Acadêmico do Curso de Administração
+          <br>
+          <span class="text-u-l">Universidade Guarulhos</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</ion-content>

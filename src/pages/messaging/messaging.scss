@@ -1,0 +1,65 @@
+page-messaging {
+  .segment {
+    padding: 0 15px;
+    .segment-button {
+      max-width: none !important;
+      font-size: 1.8rem;
+      border: none!important;
+      font-weight: 700;
+      &:active, &:hover {
+        background-color: transparent!important;
+      }
+      &.segment-activated {
+        color: color($colors, danger)!important;
+        background-color: transparent!important;
+      }
+      &:first-child {
+        border-right: 1px solid color($colors, border)!important;
+      }
+    }
+    .segment-badge {
+      position: absolute;
+      top: 0px;
+      right: -18px;
+      background-color: color($colors, danger);
+      border-radius: 999em;
+      padding: 0px 4px;
+      color: white;
+      font-size: 10px;
+      line-height: 15px;
+      min-width: 15px;
+    }
+  }
+  .matches-thumbs {
+    ion-scroll {
+      height: 96px;
+      white-space: nowrap;
+      .matches-thumb {
+        display: inline-block;
+        width: 64px;
+        margin-right: 12px;
+        position: relative;
+        margin-bottom: 12px;
+        .online-status {
+          background-color: color($colors, danger);
+          position: absolute;
+          right: -8px;
+          top: 26px;
+          width: 16px;
+          height: 16px;
+          border-radius: 999em;
+          border: 3px solid white;
+        }
+      }
+    }
+  }
+
+  .search-bar {
+    background: white;
+    border: none;
+
+    .searchbar-input {
+      background: color($colors, border);
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "tinder-2",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "pro_id": "9a9aa07a",
+  "app_id": ""
+}
