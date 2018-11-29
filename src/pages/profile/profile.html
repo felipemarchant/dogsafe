@@ -16,60 +16,36 @@
 
   <div class="wrapper b-b b-light">
     <div class="text-2x m-b-sm">
-      <span class="font-bold">Hieu Pham</span> <span class="text-xl">30</span>
+      <span class="font-bold">Costela</span><span class="text-xl">, 3</span>
     </div>
     <div class="text-muted l-h">
       <div>
-        <ion-icon name="ios-briefcase-outline"></ion-icon>
-        Front-End, UX/UI lover
+        <ion-icon name="alert"></ion-icon>
+        Dachshund
       </div>
       <div>
         <ion-icon name="ios-pin-outline" class="m-r-xs"></ion-icon>
-        less than a kilometer away
+        Guarulhos, SP
       </div>
     </div>
   </div>
 
   <div class="wrapper text-muted b-b b-light">
-    A UX/UI lover who has a hobby of making UI clones
+    Melhores cachorrinhos são os Salsichas
   </div>
-
-  <div class="wrapper text-muted b-b b-light">
-    <div class="color-black font-bold m-b">My Anthem</div>
-
-    <ion-row class="no-padder" align-items-center>
-      <ion-col>
-        <div class="m-b-sm">Shape of you</div>
-        <div>
-          <ion-icon name="ios-radio" color="like" class="m-r-sm v-align-middle"></ion-icon><span class="text-sm">Ed Sheeran</span>
-        </div>
-      </ion-col>
-      <ion-col col-auto>
-        <div class="thumb-md">
-          <img src="assets/img/instagram/insta_4.jpg" class="r-3x" alt="">
-        </div>
-      </ion-col>
-    </ion-row>
-  </div>
-
   <ion-list *ngIf="!isMe">
     <ion-item text-center class="l-s-1x">
       <div ion-text color="danger" class="font-bold">
-        RECOMMEND TINDIE
-        <div class="text-xxs">TO A FRIEND</div>
-      </div>
-    </ion-item>
-    <ion-item text-center class="l-s-1x">
-      <div class="text-sm font-bold">
-        REPORT TINDIE
+        RECOMENDAR PET
+        <div class="text-xxs">PARA AMIGO</div>
       </div>
     </ion-item>
   </ion-list>
 
   <div class="wrapper text-muted b-b b-light">
-    <div class="color-black font-bold m-b">645 Friends For Common Connections</div>
+    <div class="color-black font-bold m-b">645 Amigos em comum</div>
 
-    We compare your Facebook friends with those of your matches to display any common connections.
+    Aqui fica a descrição completa dos PET: Onde fica sua casa, gostos, o que gosta de brincar, etc.
   </div>
 
   <div class="wrapper text-muted b-b b-light">
@@ -77,22 +53,13 @@
   </div>
 
   <div class="wrapper text-muted b-b b-light">
-    <div class="color-black font-bold m-b">100 Interests</div>
+    <div class="color-black font-bold m-b">Interesses em Comum</div>
 
     <div>
-      <button ion-button outline small color="danger">Uniqlo Singapore</button>
-      <button ion-button outline small color="danger">Uniqlo Singapore</button>
-      <button ion-button outline small color="danger">Uniqlo Singapore</button>
-      <button ion-button outline small color="danger">Uniqlo Singapore</button>
-      <button ion-button outline small color="danger">Uniqlo Singapore</button>
-      <button ion-button outline small color="danger">Uniqlo Singapore</button>
-      <button ion-button outline small color="danger">Uniqlo Singapore</button>
-      <button ion-button outline small color="danger">Uniqlo Singapore</button>
-      <button ion-button outline small color="danger">Uniqlo Singapore</button>
-      <button ion-button outline small color="danger">Uniqlo Singapore</button>
-      <button ion-button outline small color="danger">Uniqlo Singapore</button>
-      <button ion-button outline small color="danger">Uniqlo Singapore</button>
-      <button ion-button outline small color="danger">Uniqlo Singapore</button>
+      <button ion-button outline small color="danger">Filhotes</button>
+      <button ion-button outline small color="danger">Sexo diferentes</button>
+      <button ion-button outline small color="danger">Até 4 Anos</button>
+      <button ion-button outline small color="danger">Qualquer raça</button>
     </div>
   </div>
 
@@ -103,11 +70,8 @@
 </div>
 
 <div class="bottom-actions bottom-buttons" horizontal layout center center-center *ngIf="!isMe">
-  <button ion-button color="light" class="button-dislike">
+  <button ion-button color="light" (click)="close()" class="button-dislike">
     <ion-icon name="md-close"></ion-icon>
-  </button>
-  <button ion-button color="light" class="button-star">
-    <ion-icon name="md-star"></ion-icon>
   </button>
   <button ion-button color="light" class="button-like">
     <ion-icon name="md-heart"></ion-icon>

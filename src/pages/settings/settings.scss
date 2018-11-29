@@ -8,8 +8,11 @@ page-settings {
     ion-icon {
       font-weight: 700;
     }
-  }
 
+  }
+  .dsfm_override_ion_content{
+    background-color: #FCCCA8 !important;
+  }
   .line-merge-down .item-inner {
     border-bottom: none !important;
   }

@@ -14,18 +14,18 @@ export class DemoAvatarComponent {
   @Input() sizeClass: string = 'thumb';// Can be 'thumb-xs'-'thumb-sm'-'thumb-md'-'thumb-lg'
 
   images: [any] = [
-    'adam.png',
-    'ben.png',
-    'hieu.png',
-    'max.png',
-    'mike.png',
-    'perry.png'
+    'bigode.jpg',
+    'costela.jpg',
+    'floquinho.jpg',
+    'pelanca.png',
+    'sujeirinha.jpg',
+    'tufinho.jpg',
   ];
   imageUrl: string;
 
   constructor() {
     let randomIndex = Math.floor(Math.random() * (this.images.length - 1));
-    this.imageUrl = `assets/img/${this.images[randomIndex]}`;
+    this.imageUrl = `assets/img/dog_profile_card/${this.images[randomIndex]}`;
 
   }
 }

@@ -20,9 +20,9 @@ export class ProfilePage {
   @ViewChild(Slides) slides: Slides;
   currentSlideIndex: number = 0;
   slideImages: any[] = [
-    { url: 'assets/img/hieu.png' },
-    { url: 'assets/img/adam.png' },
-    { url: 'assets/img/max.png' }
+    { url: 'assets/img/dog_profile/dog_1.jpg' },
+    { url: 'assets/img/dog_profile/dog_2.jpeg' },
+    { url: 'assets/img/dog_profile/dog_3.jpg' }
   ];
   isMe: boolean = true;
 

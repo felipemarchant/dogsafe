@@ -24,6 +24,8 @@ import { Keyboard } from '@ionic-native/keyboard';
 import { SwingModule } from 'angular2-swing';
 import { ElasticModule } from 'ng-elastic';
 
+import { CalendarModule } from 'ionic3-calendar-en';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -45,6 +47,7 @@ import { ElasticModule } from 'ng-elastic';
     ElasticModule,
     DirectivesModule,
     ComponentsModule,
+    CalendarModule,
     IonicModule.forRoot(MyApp, {
       mode: 'ios',// TODO: to have same iOS look for all platforms
       backButtonText: '',

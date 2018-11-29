@@ -1,36 +1,36 @@
 <ion-header no-border>
   <ion-navbar color="white">
-    <ion-title>Settings</ion-title>
+    <ion-title>Configurações</ion-title>
 
     <ion-buttons end>
-      <button ion-button clear color="danger" (click)="close()">
-        Done
+      <button ion-button clear color="secondary" (click)="close()">
+        Salvar
       </button>
     </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 
-<ion-content class="bg-custom">
+<ion-content class="dsfm_override_ion_content">
   <ion-card class="card-custom text-center wrapper">
     <div class="text-xl font-bold">
       <ion-icon name="md-flame" color="gold"></ion-icon>
-      tinder
+      Adquira a Versão PRO
       <span class="text-xs" ion-text color="gold">GOLD</span>
     </div>
     <div color="muted" ion-text>
-      Unlock Our Most Exclusive Features
+      Desfrute de novas funcionalidades, vouchers em dobro e muito mais.
     </div>
   </ion-card>
 
   <ion-card class="card-custom text-center wrapper">
     <div class="text-xl font-bold">
-      <ion-icon name="md-flame" color="danger"></ion-icon>
-      tinder
-      <span ion-text color="danger">+</span>
+      <ion-icon name="md-flame" color="secondary"></ion-icon>
+      Doe e Ganhe
+      <span ion-text color="secondary">+</span>
     </div>
     <div color="muted" ion-text>
-      Unlimited Likes & More!
+      Doe um cãozinho e ganhe brindes! 
     </div>
   </ion-card>
 
@@ -41,7 +41,7 @@
           <ion-icon name="ios-flash" color="superlike"></ion-icon>
         </button>
         <div class="font-bold" ion-text color="superlike">
-          Get Boosts
+          Vouchers em DOBRO!
         </div>
       </div>
     </ion-col>
@@ -51,7 +51,7 @@
           <ion-icon name="md-star" color="star"></ion-icon>
         </button>
         <div class="font-bold" ion-text color="star">
-          Get Super Likes
+          Area VIP
         </div>
       </div>
     </ion-col>
@@ -59,154 +59,138 @@
 
   <ion-list>
     <ion-list-header>
-      DISCOVERY SETTINGS
+      CONFIGURAÇÃO DE BUSCA DO PET
     </ion-list-header>
     <button ion-item>
-      Location
+      Localização
       <ion-note item-end>
-        My Current Location
+        Guarulhos, SP
         <br>
-        <span class="text-xs">Singapore</span>
+        <span class="text-xs">Brasil</span>
       </ion-note>
     </button>
     <ion-item class="line-merge-down">
-      Maximum Distance
+      Distância Máxima
       <ion-note item-end>
         {{distance}}km
       </ion-note>
     </ion-item>
     <ion-item>
-      <ion-range min="2" max="160" [(ngModel)]="distance" color="danger"></ion-range>
+      <ion-range min="2" max="160" [(ngModel)]="distance" color="secondary"></ion-range>
     </ion-item>
-    <button ion-item>
-      Gender
-      <ion-note item-end>
-        Women
-      </ion-note>
-    </button>
     <ion-item class="line-merge-down">
-      Age Range
+      Idade Máxima
       <ion-note item-end>
-        {{ageRange.lower}}-{{ageRange.upper}}
+        {{idade}}
       </ion-note>
     </ion-item>
     <ion-item>
-      <ion-range dualKnobs="true" [(ngModel)]="ageRange" min="18" max="65" color="danger"></ion-range>
+      <ion-range min="2" max="160" [(ngModel)]="idade" color="secondary"></ion-range>
+    </ion-item>
+    <ion-item>
+      <ion-label>Raças iguais</ion-label>
+      <ion-toggle color="secondary" checked="false"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Mesmo Sexo</ion-label>
+      <ion-toggle color="secondary" checked="false"></ion-toggle>
     </ion-item>
   </ion-list>
 
   <ion-list no-lines>
     <ion-item>
-      <ion-label>Show me on Tinder</ion-label>
-      <ion-toggle color="danger" checked="true"></ion-toggle>
+      <ion-label>Online</ion-label>
+      <ion-toggle color="secondary" checked="true"></ion-toggle>
     </ion-item>
-    <div class="padder text-muted text-xs m-t-xs">
-      While turned off, you will not be shown in the card stack. You can still see and chat with your matches.
+    <div class="padder  text-xs m-t-xs">
+      Enquanto desligado, você não será mostrado. Você ainda pode ver e conversar com os Pets e Donos.
     </div>
   </ion-list>
 
   <ion-list no-lines>
     <ion-list-header>
-      WEB PROFILE
+      Perfil
     </ion-list-header>
     <button ion-item>
       Username
       <ion-note item-end>
-        Claim yours
+        pitty2018
       </ion-note>
     </button>
-    <div class="padder text-muted text-xs m-t-xs">
-      Create a public Username. Share your Username. Have people all over the world swipe you on Tinder.
+    <div class="padder  text-xs m-t-xs">
+      Crie um nome de usuário público. Compartilhe seu nome de usuário.
     </div>
   </ion-list>
 
   <ion-list>
     <ion-list-header>
-      NOTIFICATIONS
+      Notificações
     </ion-list-header>
     <ion-item>
-      <ion-label>New Matches</ion-label>
-      <ion-toggle color="danger" checked="true"></ion-toggle>
+      <ion-label>Novos Cãozinhos</ion-label>
+      <ion-toggle color="secondary" checked="true"></ion-toggle>
     </ion-item>
     <ion-item>
-      <ion-label>Messages</ion-label>
-      <ion-toggle color="danger" checked="true"></ion-toggle>
-    </ion-item>
-    <ion-item>
-      <ion-label>Message Likes</ion-label>
-      <ion-toggle color="danger" checked="true"></ion-toggle>
-    </ion-item>
-    <ion-item>
-      <ion-label>Super Likes</ion-label>
-      <ion-toggle color="danger" checked="true"></ion-toggle>
+      <ion-label>Mensagem</ion-label>
+      <ion-toggle color="secondary" checked="true"></ion-toggle>
     </ion-item>
     <ion-item>
       <ion-label>In-App Vibrations</ion-label>
-      <ion-toggle color="danger" checked="false"></ion-toggle>
+      <ion-toggle color="secondary" checked="false"></ion-toggle>
     </ion-item>
     <ion-item>
       <ion-label>In-App Sounds</ion-label>
-      <ion-toggle color="danger" checked="true"></ion-toggle>
+      <ion-toggle color="secondary" checked="true"></ion-toggle>
     </ion-item>
   </ion-list>
 
   <ion-list no-lines>
     <ion-item text-center class="m-b-sm">
-      Restore Purchases
+      Restaurar Configurações
     </ion-item>
     <ion-item text-center>
-      Share Tinder
+      Compartilhar o Dog Safe
     </ion-item>
   </ion-list>
 
   <ion-list no-lines>
     <ion-list-header>
-      CONTACT US
+      FALE CONOSCO
     </ion-list-header>
     <button ion-item>
-      Help & Support
+      Ajuda & Suporte
     </button>
   </ion-list>
 
-  <ion-list no-lines>
-    <ion-list-header>
-      COMMUNITY
-    </ion-list-header>
-    <button ion-item>
-      Community Guidelines
-    </button>
-    <button ion-item>
-      Safety Tips
-    </button>
-  </ion-list>
 
   <ion-list no-lines>
     <ion-list-header>
       LEGAL
     </ion-list-header>
     <button ion-item>
-      Privacy Policy
+      Política e Privacidade
     </button>
     <button ion-item>
-      Terms of Service
+      Termos de Uso
     </button>
     <button ion-item>
-      Licenses
+      Licença <span color="like">FREE</span>
     </button>
   </ion-list>
 
   <ion-list no-lines>
-    <ion-item text-center class="m-b-sm">
-      Log Out
+    <ion-item text-center class="">
+      Sair
+    </ion-item>
+    <ion-item text-center>
+      Apagar sua Conta
     </ion-item>
     <div class="text-center m-b">
-      <div class="thumb-sm">
+      <div class="thumb-md">
         <img src="assets/img/logo.png" alt="">
       </div>
-      <div>Version 8.4.0</div>
+      <div>Version 1.2.0</div>
+      <div>Desenvolvido por Felipe Marchant</div>
     </div>
-    <ion-item text-center>
-      Delete Account
-    </ion-item>
   </ion-list>
 </ion-content>

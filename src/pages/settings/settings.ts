@@ -15,6 +15,7 @@ import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angul
 })
 export class SettingsPage {
   distance: number = 80;
+  idade: number = 5;
   ageRange: object = {lower: 18, upper: 30};
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {

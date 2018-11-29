@@ -16,9 +16,9 @@ export class WelcomePage {
     this.introSlides = [
       {
         title: 'Encontre o par perfeito para seu Bichinho',
-        image: 'assets/img/intro/intro_1.png'
+        image: 'assets/img/intro/dog_safe_logo_slider.png'
       },
-      {
+      /*{
         title: 'Você no controle do seu Pet:<br /> Vacinas, banho, tosa, etc.',
         image: 'assets/img/intro/intro_2.png'
       },
@@ -29,7 +29,7 @@ export class WelcomePage {
       {
         title: 'Converse a vontade com<br/ >os donoscom nosso messager',
         image: 'assets/img/intro/intro_4.png'
-      }
+      }*/
     ]
   }
 

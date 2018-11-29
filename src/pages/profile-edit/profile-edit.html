@@ -3,8 +3,8 @@
     <ion-title>Edit Info</ion-title>
 
     <ion-buttons end>
-      <button ion-button clear color="danger" (click)="close()">
-        Done
+      <button ion-button clear color="secondary" (click)="close()">
+        Salvar
       </button>
     </ion-buttons>
   </ion-navbar>
@@ -19,17 +19,33 @@
         <ion-icon name="md-close" color="danger"></ion-icon>
       </button>
       <button ion-button icon-only clear class="btn-edit" *ngIf="profileImages[i] == ''">
-        <ion-icon name="md-add-circle" color="danger"></ion-icon>
+        <ion-icon name="md-add-circle" color="secondary"></ion-icon>
       </button>
     </div>
   </div>
 
   <ion-list no-lines>
     <ion-list-header>
-      ABOUT ME
+    </ion-list-header>
+    <ion-item class="line-merge-down">
+      Nome
+      <ion-note item-end>
+        Pitty
+      </ion-note>
+    </ion-item>
+    <ion-item class="line-merge-down">
+      Raça
+      <ion-note item-end>
+        Sem Raça definida
+      </ion-note>
+    </ion-item>
+  </ion-list>
+  <ion-list no-lines>
+    <ion-list-header>
+      DESCRIÇÃO DO PET
     </ion-list-header>
     <ion-item class="text-muted" text-wrap>
-      <ion-textarea placeholder="Enter a description" value="A UX/UI lover who has a hobby of making UI clones"></ion-textarea>
+      <ion-textarea placeholder="Enter a description" value="Descrição do cachorrinho, da sua casa, hábitos, o que gosta de comer, de onde vêm, etc."></ion-textarea>
     </ion-item>
     <ion-item>
       <ion-note item-end>
@@ -37,81 +53,101 @@
       </ion-note>
     </ion-item>
   </ion-list>
-
-  <ion-list>
-    <ion-list-header>
-      CURRENT WORK
-    </ion-list-header>
-    <button ion-item>
-      Front-end dev. UX/UI lover.
-    </button>
-  </ion-list>
-
-  <ion-list>
-    <ion-list-header>
-      SCHOOL
-    </ion-list-header>
-    <button ion-item>
-      Add school
-    </button>
-  </ion-list>
-
-  <ion-list>
-    <ion-list-header>
-      INSTAGRAM PHOTOS
-    </ion-list-header>
-    <ion-item>
-      <ion-icon name="logo-instagram" color="danger" item-start></ion-icon>
-      @mrhieu
+  <ion-list no-lines>
+    <ion-item class="line-merge-down">
+      Data de Nascimento
       <ion-note item-end>
-        <span class="text-xs">DISCONNECT</span>
+        12/03/2017
       </ion-note>
     </ion-item>
   </ion-list>
-
   <ion-list>
     <ion-list-header>
-      SPOTIFY ANTHEM
+      Gênero
     </ion-list-header>
     <button ion-item>
-      <ion-icon name="ios-radio" color="like" item-start></ion-icon>
-      Shape of you
-      <p>Ed Sheeran</p>
+      Fêmea
     </button>
   </ion-list>
 
-  <ion-list>
+  <ion-list no-lines>
     <ion-list-header>
-      TOP SPOTIFY ARTIST
+      PERFIL DO DONO
     </ion-list-header>
-    <ion-item>
-      <ion-icon name="ios-radio" color="like" item-start></ion-icon>
-      Connect Spotify
+    <ion-item class="line-merge-down">
+      Nome
       <ion-note item-end>
-        <span class="text-xs" ion-text color="danger">CONNECT</span>
+        João Rossi
+      </ion-note>
+    </ion-item>
+    <ion-item class="line-merge-down">
+      Data de Nascimento
+      <ion-note item-end>
+        31/12/1996
+      </ion-note>
+    </ion-item>
+    <ion-item class="line-merge-down">
+      E-mail
+      <ion-note item-end>
+        joao@ung.com.br
+      </ion-note>
+    </ion-item>
+    <ion-item class="line-merge-down">
+      CPF
+      <ion-note item-end>
+        123.456.789-10
+      </ion-note>
+    </ion-item>
+    <ion-item class="line-merge-down">
+      Endereço
+      <ion-note item-end>
+        R. Praças Juventus
+      </ion-note>
+    </ion-item>
+    <ion-item class="line-merge-down">
+      Número
+      <ion-note item-end>
+        206
+      </ion-note>
+    </ion-item>
+    <ion-item class="line-merge-down">
+      Complemento
+      <ion-note item-end>
+        
+      </ion-note>
+    </ion-item>
+    <ion-item class="line-merge-down">
+      Bairro
+      <ion-note item-end>
+        Jardim Pedras
+      </ion-note>
+    </ion-item>
+    <ion-item class="line-merge-down">
+      Cidade
+      <ion-note item-end>
+        Guarulhos, SP
       </ion-note>
     </ion-item>
   </ion-list>
-
   <ion-list>
     <ion-list-header>
-      GENDER
+      Gênero
     </ion-list-header>
     <button ion-item>
-      Man
+      Masculino
     </button>
   </ion-list>
 
   <ion-list>
-    <ion-list-header>CONTROL YOUR PROFILE <span class="label-special">Tinder Plus</span></ion-list-header>
+    <ion-list-header>
+      INSTAGRAM
+    </ion-list-header>
     <ion-item>
-      <ion-label>Don't Show My Age</ion-label>
-      <ion-toggle color="danger" checked="true"></ion-toggle>
-    </ion-item>
-    <ion-item>
-      <ion-label>Don't Show My Distance</ion-label>
-      <ion-toggle color="danger" checked="true"></ion-toggle>
+      <ion-icon name="logo-instagram" color="secondary" item-start></ion-icon>
+      @joaorossi
+      <ion-note item-end>
+        <span class="text-xs" color="secondary">CONECTADO</span>
+      </ion-note>
     </ion-item>
   </ion-list>
-
 </ion-content>

@@ -7,12 +7,12 @@
     </ion-buttons>
 
     <ion-title>
-      <img src="assets/img/logo.png" width="30" alt="">
+      <img src="assets/img/logo.png" width="150" alt="">
     </ion-title>
 
     <ion-buttons end>
       <button ion-button icon-only (click)="goToMessaging()" class="text-md">
-        <ion-icon class="dsfm_override_nav_hamb" name="paw"></ion-icon>
+        <ion-icon class="dsfm_override_nav_hamb" name="heart"></ion-icon>
       </button>
     </ion-buttons>
   </ion-navbar>
@@ -22,7 +22,7 @@
   <div class="h-full no-cards" [hidden]="!isLoading" horizontal layout center center-center>
     <div class="ripple-container">
       <div class="thumb-lg ripple-trigger">
-        <img src="assets/img/hieu.png" class="rounded b b-2x box-shadow">
+        <img src="assets/img/dog_perfil.jpg" class="rounded b b-2x box-shadow">
       </div>
       <div class="ripple-1"></div>
       <div class="ripple-2"></div>
@@ -54,16 +54,16 @@
     </div>
 
     <div class="bottom-actions" horizontal layout center around-justified>
-      <button ion-button color="white" class="button-revert dsfm_override_button_middle_xs" (click)="getMoreCards()">
+      <button ion-button color="white" class="dsfm_color_pele button-revert dsfm_override_button_middle_xs" (click)="getMoreCards()">
         <ion-icon name="chatboxes"></ion-icon>
       </button>
-      <button ion-button color="white" class="button-like dsfm_override_button_middle_lg" (click)="liked()">
-        <ion-icon name="md-heart"></ion-icon>
-      </button>
-      <button ion-button color="white" class="button-dislike dsfm_override_button_middle_lg" (click)="disliked()">
+      <button ion-button color="white" class="dsfm_color_pele button-dislike dsfm_override_button_middle_lg" (click)="disliked()">
         <ion-icon name="md-close"></ion-icon>
       </button>
-      <button ion-button color="white" class="button-superlike dsfm_override_button_middle_xs">
+      <button ion-button color="white" class="dsfm_color_pele button-like dsfm_override_button_middle_lg" (click)="liked()">
+        <ion-icon name="md-heart"></ion-icon>
+      </button>
+      <button (click)="openProfile(false)" ion-button color="white" class="dsfm_color_pele button-superlike dsfm_override_button_middle_xs">
         <ion-icon name="information-circle-outline"></ion-icon>
       </button>
     </div>

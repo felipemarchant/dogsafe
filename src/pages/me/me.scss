@@ -46,7 +46,7 @@ page-me {
   .bottom-slides {
     height: 100px;
     margin-top: -20px;
-    margin-bototm: 8px;
+    margin-bottom: 8px;
     p {
       margin-top: 8px;
     }
@@ -90,5 +90,22 @@ page-me {
     .slide-title {
       font-size: 24px;
     }
+  }
+  .dsfm_override_ion_nav_header .toolbar-background
+  {
+    background: map-get($dsfm_override_base, ion_nav_header_c1);
+  }
+  .dsfm_color_pele{
+    background: #fdf1e8 !important;
+    color: #C56F58 !important;
+  }
+  .dsfm_override_me_bottom_bg
+  {
+    background: #E98724 !important;
+    color: #FFF !important;
+  }
+  .dsfm_icon-size {   
+    color: #FFF;
+    font-size: 28px;
   }
 }

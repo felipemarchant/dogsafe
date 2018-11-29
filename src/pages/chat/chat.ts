@@ -35,43 +35,31 @@ export class ChatPage {
     if (!this.isNewMatch) {
       this.messages = [
         {
-          isMe: true,
-          type: 'image',// text || image
-          body: 'https://media.giphy.com/media/3oz8xSjBmD1ZyELqW4/giphy.gif',
-          timestamp: 'Oct 10, 2017 9:47am'
-        },
-        {
           isMe: false,
-          avatar: 'assets/img/hieu.png',
+          avatar: 'assets/img/ben.png',
           type: 'text',// text || image
-          body: 'Hey yo what\'s up?',
+          body: 'Olá, seu bichinho é adorável.<br />O que acha?',
           timestamp: 'Oct 10, 2017 9:48am'
         },
         {
           isMe: true,
-          type: 'image',// text || image
-          body: 'https://media.giphy.com/media/lXiRyZVS9B79r2YOQ/giphy.gif',
+          type: 'text',// text || image
+          body: 'O que?',
           timestamp: 'Oct 10, 2017 9:50am'
         },
         {
           isMe: false,
-          avatar: 'assets/img/hieu.png',
-          type: 'image',// text || image
-          body: 'https://media.giphy.com/media/JUMLTR3dHEGpW/giphy.gif',
+          avatar: 'assets/img/ben.png',
+          type: 'text',// text || image
+          body: 'Ter filhotinhos *--*',
           timestamp: 'Oct 10, 2017 9:52am'
         },
         {
-          isMe: true,
-          type: 'text',// text || image
-          body: 'Where are you, buddy?',
-          timestamp: 'Oct 10, 2017 9:53am'
-        },
-        {
           isMe: false,
-          avatar: 'assets/img/hieu.png',
+          avatar: 'assets/img/ben.png',
           type: 'text',// text || image
-          body: 'I\'m almost there',
-          timestamp: 'Oct 10, 2017 9:53am'
+          body: '?',
+          timestamp: 'Oct 10, 2017 9:52am'
         }
       ];
     }
@@ -106,9 +94,9 @@ export class ChatPage {
     setTimeout(() => {
       this.messages.push({
         isMe: false,
-        avatar: 'assets/img/hieu.png',
+        avatar: 'assets/img/ben.png',
         type: 'text',
-        body: 'Nice. Keep typing dude',
+        body: ';)',
         timestamp: 'Oct 10, 2017 9:55am'
       });
 

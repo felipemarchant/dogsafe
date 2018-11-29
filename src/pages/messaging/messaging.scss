@@ -62,4 +62,33 @@ page-messaging {
       background: color($colors, border);
     }
   }
+  .dsfm_override_ion_nav_header .toolbar-background
+  {
+    background: #FABB6E;
+  }
+  button.bar-button.bar-button-ios.bar-button-clear.bar-button-clear-ios {
+      color: #FFF !important;
+  }
+  .dsfm_color_white_text
+  {
+    color:#FFF !important;
+  }
+  ion-segment-button.dsfm_color_white_text.segment-button.segment-activated,
+  .font-bold.text.text-ios.text-ios-danger {
+      color: #AB532F !important;
+  }
+  ion-badge.badge.badge-ios.badge-ios-danger,
+  page-messaging .segment .segment-badge,
+  .segment-badge
+  {
+    background-color: #AB532F !important;
+  }
+  .online-status {
+    background-color: green !important;
+  }
+  button.bar-button.bar-button-ios.bar-button-clear.bar-button-clear-ios {
+      font-size: 30px;
+  }
+
+
 }
