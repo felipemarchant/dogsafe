@@ -23,4 +23,19 @@ page-tinder-plus {
   {
     background-color: #FFF !important;
   }
+  .toolbar-background.toolbar-background-ios {
+    background-color: #C56F58 !important;
+  }
+  ion-icon.back-button-icon.icon.icon-ios.back-button-icon-ios.ion-ios-arrow-back {
+      color: #FFF !important;
+  }
+  .toolbar-title.toolbar-title-ios {
+    color: #FFF !important;
+  }
+  button.bar-button.bar-button-ios.bar-button-clear.bar-button-clear-ios.bar-button-clear-ios-secondary {
+      color: #FFF;
+  }
+  button.bar-button.bar-button-ios.bar-button-clear.bar-button-clear-ios.bar-button-clear-ios-like {
+    color: #FFF;
+  }
 }

@@ -1,0 +1,39 @@
+page-servicos {
+    .tinder-plus-banner {
+        position: relative;
+        .cta {
+        text-align: center;
+        position: absolute;
+        top: 30%;
+        left: 0;
+        width: 100%;
+        }
+    }
+    .tinder-plus-banner
+    {
+        height: 185px;
+    }
+    .dsfm_servico_statefront {
+        max-height: 197px;
+        margin: 0 auto;
+        display: block;
+    }
+    p.dsfm_card_price {
+        font-size: 20px;
+    }
+    .toolbar-background.toolbar-background-ios {
+        background-color: #CB8321 !important;
+    }
+    .toolbar-title.toolbar-title-ios {
+        color: #FFF !important;
+    }
+    button.bar-button.bar-button-ios.bar-button-clear.bar-button-clear-ios.bar-button-clear-ios-like {
+        color: #FFF;
+    }
+    ion-icon.back-button-icon.icon.icon-ios.back-button-icon-ios.ion-ios-arrow-back {
+        color: #FFF !important;
+    }
+    ion-content.bg-custom.content.content-ios {
+        background-color: #FABB6E !important;
+    }
+}

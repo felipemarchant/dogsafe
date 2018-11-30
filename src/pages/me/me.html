@@ -46,55 +46,57 @@
     <div flex two class="me-bottom-bg dsfm_override_me_bottom_bg">
       <div class="oval"></div>
 
-      <ion-slides pager class="bottom-slides" autoplay="3000" (ionSlideDidChange)="slideChanged()">
-        <ion-slide>
-          <p>Última vacina</p>
-          <div class="slide-title">
-            <ion-icon name="calendar" color="secondary"></ion-icon>
-            Vacina contra raiva.
-          </div>
-        </ion-slide>
-        <ion-slide>
-          <p>Adoção</p>
-          <div class="slide-title">
-            <ion-icon name="ios-flash" color="superlike"></ion-icon>
-            Adote seu Cãozinho
-          </div>
-        </ion-slide>
-        <ion-slide>
-          <p>Ração, tosa, banho</p>
-          <div class="slide-title">
-            <ion-icon name="md-star" color="star"></ion-icon>
-            Serviços Pet
-          </div>
-        </ion-slide>
-        <ion-slide>
-          <p>Descontos & Brindes</p>
-          <div class="slide-title">
-            <ion-icon name="md-pin" color="superlike"></ion-icon>
-            Vouchers para seu Pet
-          </div>
-        </ion-slide>
-      </ion-slides>
-
       <div class="wrapper text-center">
         <button *ngIf="currentSlideIndex == 0" ion-button color="light" class="btn-default" (click)="openTinderPlus()">
           <span ion-text color="secondary">CALENDÁRIO DO CÃOZINHO</span>
         </button>
-
-        <button *ngIf="currentSlideIndex == 1" ion-button color="light" class="btn-default" (click)="openTinderPlus()">
-          <span ion-text color="superlike">ADOÇÃO & VENDAS</span>
+      
+        <button *ngIf="currentSlideIndex == 1" ion-button color="light" class="btn-default" (click)="openDogNews()">
+          <span ion-text color="superlike">ADOÇÕES & VENDAS</span>
         </button>
-
-        <button *ngIf="currentSlideIndex == 2" ion-button color="light" class="btn-default" (click)="openTinderPlus()">
+      
+        <button *ngIf="currentSlideIndex == 2" ion-button color="light" class="btn-default" (click)="openServico()">
           <span ion-text color="star">PETSHOP</span>
         </button>
-
-        <button *ngIf="currentSlideIndex == 3" ion-button color="light" class="btn-default" (click)="openTinderPlus()">
+      
+        <button *ngIf="currentSlideIndex == 3" ion-button color="light" class="btn-default" (click)="openVoucher()">
           <span ion-text color="superlike">DESCONTOS & VOUCHERS</span>
         </button>
-
+      
       </div>
+
+      <ion-slides pager class="bottom-slides" autoplay="3000" (ionSlideDidChange)="slideChanged()">
+        <ion-slide>
+          <div class="slide-title">
+            <ion-icon name="calendar" color="secondary"></ion-icon>
+            Vacina contra raiva.
+          </div>
+          <p>Última vacina</p>
+        </ion-slide>
+        <ion-slide>
+          <div class="slide-title">
+            <ion-icon name="ios-flash" color="superlike"></ion-icon>
+            Adote seu Cãozinho
+          </div>
+          <p>Adoção</p>
+        </ion-slide>
+        <ion-slide>
+          <div class="slide-title">
+            <ion-icon name="md-star" color="star"></ion-icon>
+            Serviços Pet
+          </div>
+          <p>Ração, tosa, banho</p>
+        </ion-slide>
+        <ion-slide>
+          <div class="slide-title">
+            <ion-icon name="md-pin" color="superlike"></ion-icon>
+            Vouchers para seu Pet
+          </div>
+          <p>Descontos & Brindes</p>
+        </ion-slide>
+      </ion-slides>
+
+
     </div>
   </div>
 </ion-content>

@@ -17,6 +17,8 @@ import { SettingsPage } from '../pages/settings/settings' ;
 import { MessagingPage } from '../pages/messaging/messaging';
 import { ChatPage } from '../pages/chat/chat';
 import { TinderPlusPage } from '../pages/tinder-plus/tinder-plus';
+import { VoucherPage } from '../pages/voucher/voucher';
+import { ServicosPage } from '../pages/servicos/servicos';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -39,7 +41,9 @@ import { CalendarModule } from 'ionic3-calendar-en';
     SettingsPage,
     MessagingPage,
     ChatPage,
-    TinderPlusPage
+    TinderPlusPage,
+    VoucherPage,
+    ServicosPage
   ],
   imports: [
     BrowserModule,
@@ -66,7 +70,9 @@ import { CalendarModule } from 'ionic3-calendar-en';
     SettingsPage,
     MessagingPage,
     ChatPage,
-    TinderPlusPage
+    TinderPlusPage,
+    VoucherPage,
+    ServicosPage
   ],
   providers: [
     StatusBar,

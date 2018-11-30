@@ -162,8 +162,12 @@ export class ExplorePage {
   }
 
   checkMatching(card) {
-    if (card.name == 'Hieu Pham') {
-      let modal = this.modalCtrl.create(MatchedPage);
+    let randomIndex = Math.floor(Math.random() * 2);
+    let image = card.profile_image_url;
+    let name = card.profile_image_url;
+    if(randomIndex && name != 'Costela')
+    {
+      let modal = this.modalCtrl.create(MatchedPage, { match_image: image });
       modal.present();
     }
   }

@@ -6,6 +6,9 @@ import { ProfilePage } from '../profile/profile';
 import { ProfileEditPage } from '../profile-edit/profile-edit';
 import { SettingsPage } from '../settings/settings';
 import { TinderPlusPage } from '../tinder-plus/tinder-plus';
+import { VoucherPage } from '../voucher/voucher';
+import { MessagingPage } from '../messaging/messaging';
+import { ServicosPage } from '../servicos/servicos';
 
 @IonicPage()
 @Component({
@@ -53,5 +56,19 @@ export class MePage {
     let modal = this.modalCtrl.create(TinderPlusPage);
     modal.present();
   }
-
+  openVoucher() {
+    let modal = this.modalCtrl.create(VoucherPage);
+    modal.present();
+  }
+  openDogNews()
+  {
+    this.navCtrl.push(MessagingPage, { tabs_index: '1' }, {
+      direction: 'forward'
+    });
+  }
+  openServico() {
+    this.navCtrl.push(ServicosPage, {}, {
+      direction: 'forward'
+    });
+  }
 }
