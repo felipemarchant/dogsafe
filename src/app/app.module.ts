@@ -27,6 +27,7 @@ import { SwingModule } from 'angular2-swing';
 import { ElasticModule } from 'ng-elastic';
 
 import { CalendarModule } from 'ionic3-calendar-en';
+import { ScreenOrientation } from '@ionic-native/screen-orientation';
 
 @NgModule({
   declarations: [
@@ -79,7 +80,8 @@ import { CalendarModule } from 'ionic3-calendar-en';
     SplashScreen,
     Keyboard,
     ImagePicker,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    //{provide: ErrorHandler, useClass: IonicErrorHandler},
+    ScreenOrientation
   ]
 })
 export class AppModule {}

@@ -9,6 +9,7 @@ import { TinderPlusPage } from '../tinder-plus/tinder-plus';
 import { VoucherPage } from '../voucher/voucher';
 import { MessagingPage } from '../messaging/messaging';
 import { ServicosPage } from '../servicos/servicos';
+import { ScreenOrientation } from '@ionic-native/screen-orientation';
 
 @IonicPage()
 @Component({
@@ -19,7 +20,8 @@ export class MePage {
   @ViewChild(Slides) slides: Slides;
   currentSlideIndex: number = 0;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController, private screenOrientation: ScreenOrientation) {
+    this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.PORTRAIT);
   }
 
   ionViewDidLoad() {

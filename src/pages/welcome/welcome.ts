@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, Slides, NavParams, App } from 'ionic-angular';
-
+import { ScreenOrientation } from '@ionic-native/screen-orientation';
 import { ExplorePage } from '../explore/explore';
 
 @IonicPage()
@@ -12,7 +12,8 @@ export class WelcomePage {
   introSlides: any;
   @ViewChild('slides') slides: Slides;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public app: App) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public app: App, private screenOrientation: ScreenOrientation) {
+    this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.PORTRAIT);
     this.introSlides = [
       {
         title: 'Encontre o par perfeito para seu Bichinho',

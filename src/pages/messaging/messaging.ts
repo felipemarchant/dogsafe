@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { ExplorePage } from '../explore/explore';
 import { ChatPage } from '../chat/chat';
+import { ScreenOrientation } from '@ionic-native/screen-orientation';
 
 @IonicPage()
 @Component({
@@ -21,7 +22,8 @@ export class MessagingPage {
   ];
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private screenOrientation: ScreenOrientation) {
+    this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.PORTRAIT);
     let nav_tab_index = this.navParams.get('tabs_index');
     if (nav_tab_index) {
       this.segmentView = nav_tab_index;

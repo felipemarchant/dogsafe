@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
+import { MessagingPage } from '../messaging/messaging';
+import { ScreenOrientation } from '@ionic-native/screen-orientation';
 
 /**
  * Generated class for the MatchedPage page.
@@ -16,7 +18,8 @@ import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angul
 export class MatchedPage {
 
   public match_image: string = 'assets/img/icon.png';
-  constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController, private screenOrientation: ScreenOrientation) {
+    this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.PORTRAIT);
     let nav_match_image = this.navParams.get('match_image');
     if (nav_match_image)
     {
@@ -30,5 +33,12 @@ export class MatchedPage {
 
   close() {
     this.viewCtrl.dismiss();
+  }
+
+  goMessage(){
+    this.viewCtrl.dismiss();
+    this.navCtrl.push(MessagingPage, {}, {
+      direction: 'forward'
+    });
   }
 }

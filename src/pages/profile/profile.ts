@@ -3,6 +3,7 @@ import { App, IonicPage, NavController, NavParams, Slides, ViewController, Modal
 import { StatusBar } from '@ionic-native/status-bar';
 import { Platform } from 'ionic-angular';
 import { ProfileEditPage } from '../profile-edit/profile-edit';
+import { ScreenOrientation } from '@ionic-native/screen-orientation';
 
 /**
  * Generated class for the ProfilePage page.
@@ -32,7 +33,9 @@ export class ProfilePage {
     public statusBar: StatusBar,
     public platform: Platform,
     public modalCtrl: ModalController,
-    public app: App ) {
+    public app: App,
+    private screenOrientation: ScreenOrientation) {
+    this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.PORTRAIT);
     platform.ready().then(() => {
       statusBar.hide();
     });

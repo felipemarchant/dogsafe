@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { App, IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 import { ImagePicker } from '@ionic-native/image-picker';
+import { ScreenOrientation } from '@ionic-native/screen-orientation';
 
 /**
   REMEMBER: Install ImagePicker plugin first (https://ionicframework.com/docs/native/image-picker/)
@@ -18,7 +19,8 @@ export class ProfileEditPage {
     public navParams: NavParams,
     public viewCtrl: ViewController,
     public imagePicker: ImagePicker,
-    public app: App ) {
+    public app: App,
+    private screenOrientation: ScreenOrientation ) {
       this.profileImages = [
         'assets/img/dog_perfil.jpg',
         'assets/img/dog_perfil.jpg',
@@ -27,6 +29,7 @@ export class ProfileEditPage {
         'assets/img/dog_perfil.jpg',
         ''
       ]
+      this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.PORTRAIT);
   }
 
   ionViewDidLoad() {

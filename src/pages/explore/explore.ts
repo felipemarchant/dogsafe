@@ -12,6 +12,7 @@ import { MatchedPage } from '../matched/matched';
 import { MePage } from '../me/me';
 import { MessagingPage } from '../messaging/messaging';
 import { ProfilePage } from '../profile/profile';
+import { ScreenOrientation } from '@ionic-native/screen-orientation';
 
 @Component({
   selector: 'page-explore',
@@ -26,7 +27,8 @@ export class ExplorePage {
   users: any[];
   isLoading: boolean = true;
 
-  constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
+  constructor(public navCtrl: NavController, public modalCtrl: ModalController, private screenOrientation: ScreenOrientation) {
+    this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.PORTRAIT);
     this.stackConfig = {
       // Default setting only allows UP, LEFT and RIGHT so you can override this as below
       allowedDirections: [
