@@ -8,7 +8,6 @@ Dogsafe o aplicativo ideal para achar o par ideal do seu Pet. Desenvolvido para 
 
 Screenshots
 <br>
-
 <img src="screenshots/01.jpeg" alt="" width="200"/>
 <img src="screenshots/02.jpeg" alt="" width="200"/>
 <img src="screenshots/03.jpeg" alt="" width="200"/>
