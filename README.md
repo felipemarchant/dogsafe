@@ -7,19 +7,19 @@ Dogsafe o aplicativo ideal para achar o par ideal do seu Pet. Desenvolvido para 
   - Desenvolvido em Ionic 2
 
 Screenshots
-<img src="screenshots/01.jpeg" alt="drawing" width="200"/>
-![](screenshots/01.jpeg =250x)
-![](screenshots/02.jpeg =250x)
-![](screenshots/03.jpeg =250x)
-![](screenshots/04.jpeg =250x)
-![](screenshots/05.jpeg =250x)
-![](screenshots/06.jpeg =250x)
-![](screenshots/07.jpeg =250x)
-![](screenshots/08.jpeg =250x)
-![](screenshots/09.jpeg =250x)
-![](screenshots/10.jpeg =250x)
-![](screenshots/11.jpeg =250x)
-![](screenshots/12.jpeg =250x)
+<br>
+<img src="screenshots/01.jpeg" alt="" width="200"/>
+<img src="screenshots/02.jpeg" alt="" width="200"/>
+<img src="screenshots/03.jpeg" alt="" width="200"/>
+<img src="screenshots/04.jpeg" alt="" width="200"/>
+<img src="screenshots/05.jpeg" alt="" width="200"/>
+<img src="screenshots/06.jpeg" alt="" width="200"/>
+<img src="screenshots/07.jpeg" alt="" width="200"/>
+<img src="screenshots/08.jpeg" alt="" width="200"/>
+<img src="screenshots/09.jpeg" alt="" width="200"/>
+<img src="screenshots/10.jpeg" alt="" width="200"/>
+<img src="screenshots/11.jpeg" alt="" width="200"/>
+<img src="screenshots/12.jpeg" alt="" width="200"/>
 
 ### Installation
 
