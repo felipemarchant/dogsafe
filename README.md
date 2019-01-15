@@ -1,26 +1,30 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+「Dog Safe - Aplicativo para seu Pet」
+=======
 
-## How to use this template
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+Dogsafe o aplicativo ideal para que você ache o par do seu pet. Desenvolvido para a Grupo do Curso de Administração da Universidade de Guarulhos, apresentado na feira de empreendorismo da Universidade de Guarulhos. 
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+  - Desenvolvido em Ionic 2
 
-### With the Ionic CLI:
+### Installation
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+Dogsafe requer [Node.js](https://nodejs.org/).
 
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myTabs tabs
+Instalação do ambiente.
+
+```sh
+$ npm install -g cordova
+$ npm install -g ionic@3.19.0
+$ npm install
 ```
 
-Then, to run it, cd into `myTabs` and run:
+Run
 
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
+```sh
+ionic serve
 ```
+Licença
+----
 
-Substitute ios for android if not on a Mac.
+MIT
 
