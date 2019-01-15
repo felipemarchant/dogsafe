@@ -8,7 +8,7 @@ Dogsafe o aplicativo ideal para achar o par ideal do seu Pet. Desenvolvido para 
 
 Screenshots
 <br>
-<center>
+
 <img src="screenshots/01.jpeg" alt="" width="200"/>
 <img src="screenshots/02.jpeg" alt="" width="200"/>
 <img src="screenshots/03.jpeg" alt="" width="200"/>
@@ -21,7 +21,7 @@ Screenshots
 <img src="screenshots/10.jpeg" alt="" width="200"/>
 <img src="screenshots/11.jpeg" alt="" width="200"/>
 <img src="screenshots/12.jpeg" alt="" width="200"/>
-</center>
+
 ### Installation
 
 Dogsafe requer [Node.js](https://nodejs.org/).
