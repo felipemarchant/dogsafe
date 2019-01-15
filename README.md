@@ -7,7 +7,7 @@ Dogsafe o aplicativo ideal para achar o par ideal do seu Pet. Desenvolvido para 
   - Desenvolvido em Ionic 2
 
 Screenshots
-
+<img src="screenshots/01.jpeg" alt="drawing" width="200"/>
 ![](screenshots/01.jpeg =250x)
 ![](screenshots/02.jpeg =250x)
 ![](screenshots/03.jpeg =250x)
