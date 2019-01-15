@@ -2,7 +2,7 @@
 =======
 
 
-Dogsafe o aplicativo ideal para que você ache o par do seu pet. Desenvolvido para a Grupo do Curso de Administração da Universidade de Guarulhos, apresentado na feira de empreendorismo da Universidade de Guarulhos. 
+Dogsafe o aplicativo ideal para achar o par ideal do seu Pet. Desenvolvido para a Grupo do Curso de Administração da Universidade de Guarulhos, apresentado na feira de empreendorismo da Universidade de Guarulhos. 
 
   - Desenvolvido em Ionic 2
 
