@@ -8,18 +8,18 @@ Dogsafe o aplicativo ideal para achar o par ideal do seu Pet. Desenvolvido para 
 
 Screenshots
 
-![alt text](screenshots/01.jpeg | width=48)
-![alt text](screenshots/02.jpeg | width=48)
-![alt text](screenshots/03.jpeg | width=48)
-![alt text](screenshots/04.jpeg | width=48)
-![alt text](screenshots/05.jpeg | width=48)
-![alt text](screenshots/06.jpeg | width=48)
-![alt text](screenshots/07.jpeg | width=48)
-![alt text](screenshots/08.jpeg | width=48)
-![alt text](screenshots/09.jpeg | width=48)
-![alt text](screenshots/10.jpeg | width=48)
-![alt text](screenshots/11.jpeg | width=48)
-![alt text](screenshots/12.jpeg | width=48)
+![](screenshots/01.jpeg =250x)
+![](screenshots/02.jpeg =250x)
+![](screenshots/03.jpeg =250x)
+![](screenshots/04.jpeg =250x)
+![](screenshots/05.jpeg =250x)
+![](screenshots/06.jpeg =250x)
+![](screenshots/07.jpeg =250x)
+![](screenshots/08.jpeg =250x)
+![](screenshots/09.jpeg =250x)
+![](screenshots/10.jpeg =250x)
+![](screenshots/11.jpeg =250x)
+![](screenshots/12.jpeg =250x)
 
 ### Installation
 
